@@ -15,9 +15,9 @@ const Birthday = ({ name, day, month }) => {
 
   if (name === undefined || day === undefined || month === undefined) {
     // This is if not enough params are provided
-    name = 'Deepankar'; // Name of the Person
-    month = 6; // Month of the Birthday
-    day = 14; // Day of the Birthday
+    name = 'Chupa'; // Name of the Person
+    month = 8; // Month of the Birthday
+    day = 27; // Day of the Birthday
   }
 
   // get current time
@@ -107,15 +107,11 @@ const Birthday = ({ name, day, month }) => {
       <Countdown countdownData={state} name={name} />
       {!isItBday && (
         <>
-          <div className='birthdate'>
-            Birth-Date: {day} {monthBday} {currentYear}
-          </div>
           <div className='credits'>
             <a href='https://github.com/Deep-Codes'>
               <img src={githubLogo} alt='Github-Logo' className='github-logo' />
             </a>
           </div>
-          <Link to='/generate'>Generate Here</Link>
         </>
       )}
     </div>
