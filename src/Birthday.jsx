@@ -108,10 +108,10 @@ const Birthday = ({ name, day, month }) => {
       {!isItBday && (
         <>
           <div className='birthdate'>
-            It's: {currentYear}
+            It's: {monthBday} {currentYear} !
           </div>
           <div className='credits'>
-            <a href='https://github.com/Deep-Codes'>
+            <a href='#'>
               <img src={githubLogo} alt='Github-Logo' className='github-logo' />
             </a>
           </div>
