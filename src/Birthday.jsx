@@ -85,41 +85,41 @@ const Birthday = ({ name, day, month }) => {
     }, 1000);
   }, [currentYear, day, isItBday, month]);
 
-  let birth = new Date(currentYear, month - 1, day);
-  const monthNames = [
-    'January',
-    'February',
-    'March',
-    'April',
-    'May',
-    'June',
-    'July',
-    'August',
-    'September',
-    'October',
-    'November',
-    'December',
-  ];
+  // let birth = new Date(currentYear, month - 1, day);
+  // const monthNames = [
+  //   'January',
+  //   'February',
+  //   'March',
+  //   'April',
+  //   'May',
+  //   'June',
+  //   'July',
+  //   'August',
+  //   'September',
+  //   'October',
+  //   'November',
+  //   'December',
+  // ];
   // let monthBday = monthNames[birth.getMonth()];
 
-  return (
-    <div className='page'>
-      <Countdown countdownData={state} name={name} />
-      {/* {!isItBday && (
-        <>
-          <div className='birthdate'>
-            Birth-Date: {day} {monthBday} {currentYear}
-          </div>
-          <div className='credits'>
-            <a href='https://github.com/Deep-Codes'>
-              <img src={githubLogo} alt='Github-Logo' className='github-logo' />
-            </a>
-          </div>
-          <Link to='/generate'>Generate Here</Link>
-        </>
-      )} */}
-    </div>
-  );
+  // return (
+  //   <div className='page'>
+  //     <Countdown countdownData={state} name={name} />
+  //     {/* {!isItBday && (
+  //       <>
+  //         <div className='birthdate'>
+  //           Birth-Date: {day} {monthBday} {currentYear}
+  //         </div>
+  //         <div className='credits'>
+  //           <a href='https://github.com/Deep-Codes'>
+  //             <img src={githubLogo} alt='Github-Logo' className='github-logo' />
+  //           </a>
+  //         </div>
+  //         <Link to='/generate'>Generate Here</Link>
+  //       </>
+  //     )} */}
+  //   </div>
+  // );
 };
 
 export default Birthday;
