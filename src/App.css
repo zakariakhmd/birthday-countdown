@@ -3,7 +3,7 @@
 /* VARIABLES */
 :root {
   --main-bg-color-dark: #212529;
-  --main-text-color-dark: #e8e8e8;
+  --main-text-color-dark: #fefdd0;
 }
 
 * {
@@ -30,7 +30,7 @@ body {
   font-size: 45px;
 }
 .highlight {
-  color: #E7D27C;
+  color: #fcc201;
 }
 .countdown-wrapper {
   max-width: 800px;
@@ -41,10 +41,10 @@ body {
   margin: 40px 0;
 }
 .countdown-box {
-  background-color: #413c69;
+  background-color: #bb890e;
   font-size: 50px;
   font-weight: 700;
-  color: #dcd6f7;
+  color: #fcc201;
   border-radius: 15px;
   width: 160px;
   height: 160px;
@@ -57,7 +57,7 @@ body {
 }
 .legend {
   font-size: 30px;
-  color: #a6b1e1;
+  color: #fcc201;
 }
 .wish-message {
   font-size: 45px;
@@ -66,7 +66,7 @@ body {
 .birthdate {
   font-size: 25px;
   font-weight: 600;
-  color: #7f78d2;
+  color: #fcc201;
 }
 .credits {
   margin-top: 15px;
