@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import Countdown from './Countdown';
-import githubLogo from './githubLogo.svg';
-import { Link } from 'react-router-dom';
+// import githubLogo from './githubLogo.svg';
+// import { Link } from 'react-router-dom';
 
 const Birthday = ({ name, day, month }) => {
   // useState Hooks
@@ -102,24 +102,24 @@ const Birthday = ({ name, day, month }) => {
   ];
   let monthBday = monthNames[birth.getMonth()];
 
-  // return (
-  //   <div className='page'>
-  //     <Countdown countdownData={state} name={name} />
-  //     {!isItBday && (
-  //       <>
-  //         <div className='birthdate'>
-  //           Birth-Date: {day} {monthBday} {currentYear}
-  //         </div>
-  //         <div className='credits'>
-  //           <a href='https://github.com/Deep-Codes'>
-  //             <img src={githubLogo} alt='Github-Logo' className='github-logo' />
-  //           </a>
-  //         </div>
-  //         <Link to='/generate'>Generate Here</Link>
-  //       </>
-  //     )}
-  //   </div>
-  // );
+  return (
+    <div className='page'>
+      <Countdown countdownData={state} name={name} />
+      {/* {!isItBday && (
+        <>
+          <div className='birthdate'>
+            Birth-Date: {day} {monthBday} {currentYear}
+          </div>
+          <div className='credits'>
+            <a href='https://github.com/Deep-Codes'>
+              <img src={githubLogo} alt='Github-Logo' className='github-logo' />
+            </a>
+          </div>
+          <Link to='/generate'>Generate Here</Link>
+        </>
+      )} */}
+    </div>
+  );
 };
 
 export default Birthday;
