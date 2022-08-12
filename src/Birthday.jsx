@@ -115,7 +115,7 @@ const Birthday = ({ name, day, month }) => {
               <img src={githubLogo} alt='Github-Logo' className='github-logo' />
             </a>
           </div>
-          <Link to='/generate'>Congrats for getting old, Wifey !</Link>
+          <Link to='/generate'>You're getting old soon, Wifey !</Link>
         </>
       )}
     </div>
