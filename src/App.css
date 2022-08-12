@@ -44,7 +44,7 @@ body {
   background-color: #cda646;
   font-size: 50px;
   font-weight: 700;
-  color: #efe9ab;
+  color: #fefdd0;
   border-radius: 15px;
   width: 160px;
   height: 160px;
@@ -57,7 +57,7 @@ body {
 }
 .legend {
   font-size: 30px;
-  color: #660D3B;
+  color: #efe9ab;
 }
 .wish-message {
   font-size: 45px;

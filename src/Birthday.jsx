@@ -112,7 +112,6 @@ const Birthday = ({ name, day, month }) => {
           </div>
           <div className='credits'>
             <a href='https://github.com/zakariakhmd/birthday-countdown'>
-              <img src={githubLogo} alt='Github-Logo' className='github-logo' />
             </a>
           </div>
           <Link to='/generate'>You're getting old soon, Wifey !</Link>
