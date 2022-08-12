@@ -111,7 +111,7 @@ const Birthday = ({ name, day, month }) => {
             It's: {monthBday} {currentYear} !
           </div>
           <div className='credits'>
-            <a href='#'>
+            <a href='https://github.com/zakariakhmd/birthday-countdown'>
               <img src={githubLogo} alt='Github-Logo' className='github-logo' />
             </a>
           </div>
