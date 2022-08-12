@@ -15,7 +15,7 @@ body {
   font-family: 'Montserrat', sans-serif;
   background-color: var(--main-bg-color-dark);
   color: var(--main-text-color-dark);
-  background-color: #1d1d1d;
+  background-color: #660D3B;
 }
 .page {
   width: 100%;
@@ -30,7 +30,7 @@ body {
   font-size: 45px;
 }
 .highlight {
-  color: #7f78d2;
+  color: #E7D27C;
 }
 .countdown-wrapper {
   max-width: 800px;
