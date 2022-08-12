@@ -100,7 +100,7 @@ const Birthday = ({ name, day, month }) => {
     'November',
     'December',
   ];
-  let monthBday = monthNames[birth.getMonth()];
+  // let monthBday = monthNames[birth.getMonth()];
 
   return (
     <div className='page'>
