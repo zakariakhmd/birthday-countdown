@@ -1,17 +1,17 @@
-import React, { useState, useEffect } from 'react';
-import Countdown from './Countdown';
+// import React, { useState, useEffect } from 'react';
+// import Countdown from './Countdown';
 // import githubLogo from './githubLogo.svg';
 // import { Link } from 'react-router-dom';
 
 const Birthday = ({ name, day, month }) => {
   // useState Hooks
-  const [state, setState] = useState({
-    seconds: 0,
-    hours: 0,
-    minutes: 0,
-    days: 0,
-    isItBday: false,
-  });
+  // const [state, setState] = useState({
+  //   seconds: 0,
+  //   hours: 0,
+  //   minutes: 0,
+  //   days: 0,
+  //   isItBday: false,
+  // });
 
   if (name === undefined || day === undefined || month === undefined) {
     // This is if not enough params are provided
