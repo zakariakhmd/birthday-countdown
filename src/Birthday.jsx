@@ -4,7 +4,7 @@ import githubLogo from './githubLogo.svg';
 import { Link } from 'react-router-dom';
 
 const Birthday = ({ name, day, month }) => {
-  useState Hooks
+  // useState Hooks
   const [state, setState] = useState({
     seconds: 0,
     hours: 0,
@@ -14,31 +14,31 @@ const Birthday = ({ name, day, month }) => {
   });
 
   if (name === undefined || day === undefined || month === undefined) {
-    This is if not enough params are provided
+    // This is if not enough params are provided
     name = 'Chupa'; // Name of the Person
     month = 8; // Month of the Birthday
     day = 27; // Day of the Birthday
   }
 
-  get current time
+  // get current time
   const currentTime = new Date();
-  get current year
+  // get current year
   const currentYear = currentTime.getFullYear();
 
-  Getting the Birthday in Data Object
-  WE subtract 1 from momnth ; Months start from 0 in Date Object
-  Bithday Boolean
+  // Getting the Birthday in Data Object
+  // WE subtract 1 from momnth ; Months start from 0 in Date Object
+  // Bithday Boolean
   const isItBday =
     currentTime.getDate() === day && currentTime.getMonth() === month - 1;
 
   useEffect(() => {
     setInterval(() => {
       const countdown = () => {
-        Getting the Current Date
+        // Getting the Current Date
         const dateAtm = new Date();
 
-        if the Birthday has passed
-        then set the Birthday countdown for next year
+        // if the Birthday has passed
+        // then set the Birthday countdown for next year
         let birthdayDay = new Date(currentYear, month - 1, day);
         if (dateAtm > birthdayDay) {
           birthdayDay = new Date(currentYear + 1, month - 1, day);
@@ -46,12 +46,12 @@ const Birthday = ({ name, day, month }) => {
           birthdayDay = new Date(currentYear, month - 1, day);
         }
 
-        Getitng Current Time
+        // Getitng Current Time
         const currentTime = dateAtm.getTime();
-        Getting Birthdays Time
+        // Getting Birthdays Time
         const birthdayTime = birthdayDay.getTime();
 
-        Time remaining for the Birthday
+        // Time remaining for the Birthday
         const timeRemaining = birthdayTime - currentTime;
 
         let seconds = Math.floor(timeRemaining / 1000);
@@ -63,7 +63,7 @@ const Birthday = ({ name, day, month }) => {
         minutes %= 60;
         hours %= 24;
 
-        Setting States
+        // Setting States
         setState((prevState) => ({
           ...prevState,
           seconds,
@@ -72,7 +72,7 @@ const Birthday = ({ name, day, month }) => {
           days,
           isItBday,
         }));
-        console.log(`${days}:${hours}:${minutes}:${seconds} , ${isItBday}`);
+        // console.log(`${days}:${hours}:${minutes}:${seconds} , ${isItBday}`);
       };
       if (!isItBday) {
         countdown();
@@ -105,19 +105,19 @@ const Birthday = ({ name, day, month }) => {
   return (
     <div className='page'>
       <Countdown countdownData={state} name={name} />
-      {/* {!isItBday && (
+      {!isItBday && (
         <>
           <div className='birthdate'>
-            // Birth-Date: {day} {monthBday} {currentYear}
+            Birth-Date: {day} {monthBday} {currentYear}
           </div>
           <div className='credits'>
-            // <a href='https://github.com/Deep-Codes'>
-            //   <img src={githubLogo} alt='Github-Logo' className='github-logo' />
-            // </a>
+            <a href='https://github.com/Deep-Codes'>
+              <img src={githubLogo} alt='Github-Logo' className='github-logo' />
+            </a>
           </div>
-          <Link to='/generate'>Generate Here</Link>
+          {/* <Link to='/generate'>Generate Here</Link> */}
         </>
-      )} */}
+      )}
     </div>
   );
 };
