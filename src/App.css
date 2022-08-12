@@ -30,7 +30,7 @@ body {
   font-size: 45px;
 }
 .highlight {
-  color: #fcc201;
+  color: #ffdf01;
 }
 .countdown-wrapper {
   max-width: 800px;
@@ -41,10 +41,10 @@ body {
   margin: 40px 0;
 }
 .countdown-box {
-  background-color: #bb890e;
+  background-color: #cda646;
   font-size: 50px;
   font-weight: 700;
-  color: #fcc201;
+  color: #efe9ab;
   border-radius: 15px;
   width: 160px;
   height: 160px;
@@ -57,7 +57,7 @@ body {
 }
 .legend {
   font-size: 30px;
-  color: #fcc201;
+  color: #660D3B;
 }
 .wish-message {
   font-size: 45px;
@@ -66,7 +66,7 @@ body {
 .birthdate {
   font-size: 25px;
   font-weight: 600;
-  color: #fcc201;
+  color: #660D3B;
 }
 .credits {
   margin-top: 15px;
@@ -138,7 +138,7 @@ select:focus,
   color: white;
 }
 a {
-  color: #7f78d2;
+  color: #660D3B;
   font-weight: bold;
   margin-top: 20px;
 }
