@@ -60,11 +60,11 @@ body {
   color: #efe9ab;
 }
 .wish-message {
-  font-size: 45px;
-  font-weight: 700;
+  font-size: 30px;
+  font-weight: 500;
 }
-.wish-detail {
-  font-size: 20px;
+.wish-message {
+  font-size: 18px;
   font-weight: 300;
 }
 .birthdate {
