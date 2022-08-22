@@ -28,9 +28,15 @@ const Countdown = ({ countdownData, name }) => {
         </div>
       </div>
     );
+<<<<<<< HEAD
   } else {    
     return <Wish name={name} />;
       }
+=======
+  } else {
+    return <Wish name={name} />;
+  }
+>>>>>>> be03977e48ed58e3605805e1a2d86d3607a1a5ea
 };
 
 export default Countdown;
