@@ -63,6 +63,10 @@ body {
   font-size: 45px;
   font-weight: 700;
 }
+.wish-message {
+  font-size: 30px;
+  font-weight: 500;
+}
 .birthdate {
   font-size: 25px;
   font-weight: 600;
