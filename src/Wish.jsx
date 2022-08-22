@@ -2,7 +2,7 @@ import React from 'react';
 
 const Wish = ({ name }) => {
   return (
-    <div className='page'>
+    <div>
       <h1 className='wish-message'>
         HAPPY BIRTHDAY <span className='highlight'>{name.toUpperCase()}</span> !!!
       </h1>
