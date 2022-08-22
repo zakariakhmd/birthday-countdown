@@ -101,6 +101,25 @@ const Birthday = ({ name, day, month }) => {
     'December',
   ];
   let monthBday = monthNames[birth.getMonth()];
+
+  return (
+    <div className='page'>
+      <Countdown countdownData={state} name={name} />
+      {!isItBday && (
+        <>
+          <div className='birthdate'>
+            It's: {monthBday} {currentYear} !
+          </div>
+          <div className='credits'>
+            <a href='https://github.com/zakariakhmd/birthday-countdown'>
+              <img src={githubLogo} alt='Github-Logo' className='github-logo' />
+            </a>
+          </div>
+          <Link to='/generate'>You're getting old soon, Wifey !</Link>
+        </>
+      )}
+    </div>
+  );
 };
 
 export default Birthday;
