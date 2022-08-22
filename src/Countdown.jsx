@@ -3,6 +3,9 @@ import Wish from './Wish';
 
 const Countdown = ({ countdownData, name }) => {
   if (!countdownData.isItBday) {
+    return <Wish name={name} />;
+      }
+  } else {   
     return (
       <div>
         <h1 className='heading'>
@@ -27,16 +30,7 @@ const Countdown = ({ countdownData, name }) => {
           </div>
         </div>
       </div>
-    );
-<<<<<<< HEAD
-  } else {    
-    return <Wish name={name} />;
-      }
-=======
-  } else {
-    return <Wish name={name} />;
-  }
->>>>>>> be03977e48ed58e3605805e1a2d86d3607a1a5ea
+    ); 
 };
 
 export default Countdown;
