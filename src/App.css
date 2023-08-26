@@ -15,7 +15,7 @@ body {
   font-family: 'Montserrat', sans-serif;
   background-color: var(--main-bg-color-dark);
   color: var(--main-text-color-dark);
-  background-color: #660D3B;
+  background-color: #f0f0dc;
 }
 .page {
   width: 100%;
@@ -41,7 +41,7 @@ body {
   margin: 40px 0;
 }
 .countdown-box {
-  background-color: #f0f0dc;
+  background-color: #cda646;
   font-size: 50px;
   font-weight: 700;
   color: #fefdd0;
@@ -70,7 +70,7 @@ body {
 .birthdate {
   font-size: 25px;
   font-weight: 600;
-  color: #660D3B;
+  color: #f0f0dc;
 }
 .credits {
   margin-top: 15px;
@@ -142,7 +142,7 @@ select:focus,
   color: white;
 }
 a {
-  color: #660D3B;
+  color: #f0f0dc;
   font-weight: bold;
   margin-top: 20px;
 }
